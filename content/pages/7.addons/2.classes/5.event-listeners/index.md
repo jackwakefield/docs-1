@@ -25,7 +25,7 @@ Perhaps you'd like to send a tweet after an entry has been published in the Cont
 
 namespace Statamic\Addons\Tweeter;
 
-use Statamic\Extend\Listener
+use Statamic\Extend\Listener;
 
 class TweeterListener extends Listener
 {
@@ -62,6 +62,19 @@ public function makeEntryAwesome($entry)
   return $entry;
 }
 ```
+RawBlameHistory ￼  ￼
+Executable File  71 lines (49 sloc)  1.98 KB
+title	overview	id
+Event Listeners
+Certain, specific actions in Statamic and other addons will fire events that can be listening for, allowing for other actions to be scripted reactively. Basically, it's just a fancy way of saying "When that happens, do this."
+a5a4089e-4555-47e1-800a-e8e324cef143
+How Event Listeners Work
+Listeners should define a list of events mapped to the class methods. When matching events are fired, the appropriate methods are executed. That list lives in the class array variable $events.
+
+Generating an Event Listener Class {#generating}
+You can generate an event listener class file with a console command.
+
+
 
 ## Native Events {#events}
 
